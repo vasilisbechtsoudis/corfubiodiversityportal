@@ -1,0 +1,100 @@
+body,html{
+    margin: 0;
+    padding:0;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+header{
+    width: 100%;
+    height:90px;
+    background-color: green;
+}
+
+.menu{
+    width:100%;
+    margin: auto;   
+
+}
+
+.menu ul{
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+
+    
+    
+}
+
+.menu ul li{
+    width: 100px;
+    margin:0 50px;
+    padding-top: 40px;
+    
+    position: relative;
+}
+
+.logo{
+    float: left;
+}
+
+nav{
+    float: right;
+}
+
+nav a{
+    color: honeydew;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+nav a:hover{
+    color: black;
+}
+
+.slider{
+    overflow: hidden;
+}
+
+.slider figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+
+}
+
+.slider figure img{
+    float: left;
+    width: 20%;
+
+}
+
+@keyframes slider{
+    0%{
+        left:0;
+    
+    }
+    20%{
+        left: 0;
+    }
+    25%{
+        left: -100%;
+    }
+    45%{
+        left: -100%;
+
+    }
+    50%{
+        left: -200%;
+    }
+    70%{
+        left: -200%;
+    }
+}
